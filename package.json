@@ -1,0 +1,23 @@
+{
+  "name": "Logotypica",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/NoviumDesign/Logotypica",
+  "author": {
+    "name": "Anton Kjörck Lindén",
+    "email": "anton@noviumdesign.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoviumDesign/Logotypica.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/NoviumDesign/Logotypica/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "node-build-script": "http://github.com/h5bp/node-build-script/tarball/master"
+  }
+}
