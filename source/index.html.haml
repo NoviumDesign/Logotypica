@@ -1,9 +1,152 @@
 ---
-title: Middleman is Watching
 body_class: index
 ---
 
-.welcome
-  %h1 Middleman is Watching
-  %p.doc
-    = link_to 'Read Online Documentation', 'http://middlemanapp.com/', title: 'Read Online Documentation', target: '_blank'
+.arrow.left.hidden-phone
+  %div
+.arrow.right.hidden-phone
+  %div
+.arrows.noTransition.visible-desktop
+.process-bar.hidden-phone
+  .slider.noTransition
+%nav.clearfix
+  %ul.clearfix
+    %li
+      %a.active{:href => "#intro"} Intro
+    %li
+      %a{:href => "#symbol"} Symbol
+    %li
+      %a{:href => "#monster"} Mönster
+    %li
+      %a{:href => "#logotyp"} Logotyp
+    %li
+      %a{:href => "#customtype"} Custom type
+    %li
+      %a{:href => "#marke"} Märke
+    %li
+      %a{:href => "#redesign"} Redesign
+    %li
+      %a{:href => "#piktogram"} Piktogram
+    %li
+      %a{:href => "#kontakt"} Kontakt
+.wrapper.clearfix
+  %section#intro
+    .box.w830
+      .full
+        .intro
+          .clearfix
+            .ingres.pull-left
+              %h1 ERBJUDANDE
+              %p Logotypica hjälper varumärken att bli valda genom design som framhäver det äkta. Verktygen är symboler, logotyper och olika grafiska element.
+          %img{:src => "img/logotypica.png"}
+          .novium
+            %span
+              Copyright © 2013 Logotypica<sup>®</sup>
+              är en del av
+              %a{:href => "http://noviumdesign.se"} Novium Design
+  %section#symbol
+    .box.w830
+      .full
+        %img{:src => "img/nexcite-package.jpg"}
+    .box.w450
+      .half.lightbg
+        %img{:src => "img/nexcite-logo.png"}
+      .half
+        .textbox.symboltext
+          %h1 SYMBOL
+          %p Känslor låter sig inte alltid beskrivas i ord. När orden inte räcker till, eller när du vill ha det viktiga sagt direkt; ta genvägen via en symbol.
+        %img.absolute-left-bottom{:src => "img/shc.png"}
+  %section#monster
+    .box.w830
+      .full
+        %img{:src => "img/lll.jpg"}
+        .absolute-left-top
+          %h1 MÖNSTER
+          %p Precis som en typografi är mönster ett effektivt verktyg i en grafisk identitet. Att mönster dessutom syns bra på avstånd gör inte saken sämre.
+    .box.w450
+      .half
+        %img{:src => "img/iron-pipes.png"}
+      .half
+        %img{:src => "img/flower-pattern.png"}
+  %section#logotyp
+    .box.w830
+      .full
+        .textbox
+          .logos
+            .left.pull-left.clearfix
+              %h1 LOGOTYP
+              %p Eftersom logotypen är kärnan i en grafisk identitet bör den harmoniera med varumärkets grundtanke och karaktär. Logotypens symboliska funktion är att vara en påminnelse och en katalysator för känslor och associationer utifrån varumärkets värden.
+            .right.pull-left.clearfix
+              %img{:src => "img/cid-logo.png"}
+            .bottom.pull-left
+              %img{:src => "img/interapp.png"}
+    .box.w830
+      .full
+        %img{:src => "img/cid-package.jpg"}
+    .box.w830
+      .full
+        %img{:src => "img/logos.png"}
+  %section#customtype
+    .box.w830
+      .full
+        %img{:src => "img/milkshake.png"}
+        .absolute-left-top
+          %h1 CUSTOM TYPE
+          %p Trots att det finns tusentals typsnitt kan det ibland vara en god idé att korrigera eller specialrita ett eget.
+    .box.w450
+      .half.lightbg
+        %img{:src => "img/customtype.png"}
+      .half.lighterbg
+        %img{:src => "img/granngarden.png"}
+        .absolute-left-bottom
+          %p.customer Kunder för Custom type: Bakerscape, Spacerabbit och Blink Partners.
+  %section#marke
+    .box.w830
+      .full
+        %img{:src => "img/bocca-package.jpg"}
+        .absolute-left-top
+          %h1 MÄRKE
+          %p Har du en bra garanti eller en produkt som funnits med sedan 1847? Manifestera det med ett tydligt märke.
+    .box.w450
+      .half
+        %img{:src => "img/bocca-logo.png"}
+      .half.hamilton
+        %img{:src => "img/hamilton.png"}
+  %section#redesign
+    .box.w900
+      .half.lightbg
+        %img{:src => "img/felix-logo.png"}
+        .absolute-left-top
+          %h1 REDESIGN
+          %p Logotypdesign handlar inte alltid om att utgå från ett oskrivet ark. För etablerade varumärket är det oftast klokare att göra mindre förändringar. Vi hjälper dig hålla logotypen i form.
+      .half.gray
+        %img{:src => "img/redesign.png"}
+  %section#piktogram
+    .box.w830
+      .full
+        %img{:src => "img/etac.jpg"}
+        .absolute-left-top.piktogram
+          %h1 PIKTOGRAM
+          %p Piktogram är ett snabbläst, visuellt språk som med fördel kan användas globalt. Ikoner och piktogram förekommer på allt från förpackningar och hemsidor till offentliga miljöer som flygplatser.
+    .box.w450
+      .full.lightbg
+        %img{:src => "img/icons.png"}
+  %section#kontakt
+    .box.w830
+      .full.contact-wrapper
+        %p.hi Tveka inte att höra av dig om du vill ha mer information eller diskutera ett projekt.
+        .left
+          %h1 KONTAKT
+          %p
+            %span Håkan Schallinger
+            %span Senior Designer
+            %span +46 (0) 707 91 88 97
+            %span
+              %a{:href => "mailto:hakan@logotypica.se"} hakan@logotypica.se
+          %h1 ADRESS
+          %p
+            %span Logotypica<sup>®</sup> 
+            %span Besöksadress: Bråvallavägen 38
+            %span 182 66 Djursholm
+        .right
+          %img.map{:src => "img/map.jpg"}

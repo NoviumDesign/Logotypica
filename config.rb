@@ -49,34 +49,49 @@
 
 set :css_dir, 'stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'js'
 
-set :images_dir, 'images'
+set :images_dir, 'img'
+
+# Prevent middleman from putting a layout to the sitemap.xml
+page "/sitemap.xml", :layout => false
+
+# Markdown parser config
+set :markdown_engine, :redcarpet
+set :markdown,  :fenced_code_blocks => true,
+                :autolink => true, 
+                :smartypants => true
 
 # Build-specific configuration
 configure :build do
-  ignore 'images/*.psd'
+  ignore 'img/*.psd'
   ignore 'stylesheets/lib/*'
   ignore 'stylesheets/vendor/*'
-  ignore 'javascripts/lib/*'
-  ignore 'javascripts/vendor/*'
+  ignore 'js/lib/*'
+  ignore 'js/vendor/*'
 
   # For example, change the Compass output style for deployment
   activate :minify_css
 
-  # Minify Javascript on build
+  # Minify Javascript
   activate :minify_javascript
 
+  # Minify HTML
+  activate :minify_html
+
+  # GZip
+  activate :gzip
+
   # Enable cache buster
-  # activate :cache_buster
+  activate :asset_hash, :ignore => 'img/signature/*'
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+  require "middleman-smusher"
+  activate :smusher
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
