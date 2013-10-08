@@ -1,5 +1,3 @@
-# [Logotypica](http://logotypica.se)
-
 ## Quick start
 
 Choose one of the following options:

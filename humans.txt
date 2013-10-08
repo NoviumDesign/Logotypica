@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <Håkan Schallinger> -- <Graphical design> --
+    <Anton Kjörck Lindén> -- <Lead developer> --
+    <Emil Blomquist> -- <UX js development> -- 
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery, Modernizr
